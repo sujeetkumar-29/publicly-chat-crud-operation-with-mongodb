@@ -1,0 +1,24 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="row"> 
+    <div class="col-8 offset-2"><br>
+            <h3>Add new chat</h3>
+    <form  method="post" action="/chats" novalidate class="needs-validation">
+        <div>
+        <label for="from" class="form-label">Your name</label>
+        <input  placeholder="enter your name" name="from" class="form-control" id="from" required> <br>
+        </div>
+            <div>
+                <label for="msg" class="form-label">Message</label>
+                <textarea placeholder="enter your message" name="msg" class="form-control" id="msg" required></textarea> <br>
+            </div>
+            <div>
+        <label for="to" class="form-label">Reciever name</label>
+        <input placeholder="enter reciever name" name="to" class="form-control" id="to" required> <br><br>  
+          </div>
+
+        <button class="btn btn-dark"><i class="fa-solid fa-circle-plus"></i> Create</button>
+
+        </form>
+    </div>
+</div>

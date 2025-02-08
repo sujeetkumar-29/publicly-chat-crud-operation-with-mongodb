@@ -1,0 +1,49 @@
+body{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+/* Index styling */
+.chat {
+    background-color: aliceblue;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display:inline-block;
+    margin-left: 1rem;
+    margin: 1rem;
+    /* text-align: center; */
+    
+}
+
+.msg{
+    background-color: dodgerblue ;
+    color:white;
+    padding: 5px 16px;
+    border-radius: 16px;
+}
+
+.button{
+    display: flex;
+    
+}
+.btn{
+    margin:1rem;
+}
+
+/* Navbar styling */
+.navbar {
+    height: 5rem;
+    background-color: #fff;
+}
+.fa-rocketchat{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    color:rgba(0, 98, 255, 0.715);
+}
+.nav-link{
+    color:#222 !important;
+    font-size: 1.5rem !important;
+    margin: 1.5rem  !important;
+    
+
+}
