@@ -5,27 +5,30 @@
     </form> -->
     <% for(let chat of chats){ %>
         <div class="chat">
-            <p>From: <b><%=chat.from %></b>
+            <p>From: <b>
+                    <%=chat.from %>
+                </b>
             </p>
             <div class="msg">
                 <p>Message: <%=chat.msg %>
                 </p>
                 <div class="button">
-                <form method="get" action="/chats/<%=chat._id%>/edit">
-                    <button class="btn btn-dark"><i class="fa-solid fa-pen"></i> Edit</button>
-                </form>
-                
-                <form method="post" action="/chats/<%=chat._id%>?_method=DELETE">
-                    <button class="btn btn-danger" ><i class="fa-solid fa-trash"></i> Delete</button>
-                    
-                    
-                </form>
+                    <form method="get" action="/chats/<%=chat._id%>/edit">
+                        <button class="btn btn-dark"><i class="fa-solid fa-pen"></i></button>
+                    </form>
+
+                    <form method="post" action="/chats/<%=chat._id%>?_method=DELETE">
+                        <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    </form>
+                </div>
             </div>
-            </div>
-            <p>Reciever: <b><%=chat.to %></b>
+            <p>Reciever: <b>
+                    <%=chat.to %>
+                </b>
             </p>
             <hr>
-            <p><%=chat.created_at.toString().split(" ")[4] %></p>
+            <p>
+                <%=chat.created_at.toString().split(" ")[4] %></p>
             <p><%=chat.created_at.toString().split(" ").slice(0,4).join(" ")%></p>
         </div>
         
